@@ -1,0 +1,129 @@
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: fit-content;
+  }
+  
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    gap: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+    flex: 1;
+  }
+  
+  .card-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    white-space: nowrap;
+  }
+  
+  .card-badge.virtual {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+  }
+  
+  .card-badge.presencial {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .card-badge.fishery {
+    background-color: var(--accent-color);
+    color: white;
+  }
+  
+  .card-body {
+    margin-bottom: 20px;
+  }
+  
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .card-info strong {
+    color: var(--text-color);
+    font-size: 0.9rem;
+  }
+  
+  .card-info span {
+    color: var(--accent-color);
+    font-weight: 500;
+  }
+  
+  .card-description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .card-description strong {
+    color: var(--text-color);
+    font-size: 0.9rem;
+  }
+  
+  .card-description p {
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .card-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    padding-top: 15px;
+    border-top: 1px solid var(--border-color);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .card {
+      padding: 15px;
+    }
+    
+    .card-actions {
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    .card-actions .btn {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    
+    .card-badge {
+      align-self: flex-start;
+    }
+  }

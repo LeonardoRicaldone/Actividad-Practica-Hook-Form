@@ -1,0 +1,85 @@
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    min-width: 120px;
+    border: 2px solid transparent;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .btn:active {
+    transform: translateY(0);
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    color: var(--text-color);
+    border-color: var(--border-color);
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border-color: #dc3545;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+  }
+  
+  .btn-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  .btn-disabled:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      min-width: 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .btn {
+      padding: 8px 16px;
+      font-size: 0.8rem;
+      min-width: 80px;
+    }
+  }
